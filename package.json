@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-llmpulse",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "n8n community node for LLM Pulse, the AI visibility analytics platform. Track brand mentions, citations and share of voice across ChatGPT, Perplexity, Gemini and more.",
 	"keywords": [
 		"n8n-community-node-package",
