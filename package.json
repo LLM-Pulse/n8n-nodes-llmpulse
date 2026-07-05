@@ -1,0 +1,64 @@
+{
+	"name": "n8n-nodes-llmpulse",
+	"version": "0.1.1",
+	"description": "n8n community node for LLM Pulse, the AI visibility analytics platform. Track brand mentions, citations and share of voice across ChatGPT, Perplexity, Gemini and more.",
+	"keywords": [
+		"n8n-community-node-package",
+		"llm-pulse",
+		"llmpulse",
+		"ai-visibility",
+		"geo",
+		"generative-engine-optimization",
+		"ai-search",
+		"brand-monitoring"
+	],
+	"license": "MIT",
+	"homepage": "https://llmpulse.ai/api-docs",
+	"author": {
+		"name": "LLM Pulse",
+		"email": "support@llmpulse.ai"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LLM-Pulse/n8n-nodes-llmpulse.git"
+	},
+	"engines": {
+		"node": ">=18.10"
+	},
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc && gulp build:assets",
+		"dev": "tsc --watch",
+		"format": "prettier nodes credentials --write",
+		"lint": "eslint nodes credentials package.json",
+		"lintfix": "eslint nodes credentials package.json --fix",
+		"release": "n8n-node release"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/LlmPulseApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/LlmPulse/LlmPulse.node.js",
+			"dist/nodes/LlmPulse/LlmPulseTrigger.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "^0.37.4",
+		"@types/node": "^18.16.16",
+		"@typescript-eslint/parser": "~8.32.0",
+		"eslint": "^8.57.0",
+		"eslint-plugin-n8n-nodes-base": "^1.16.3",
+		"gulp": "^5.0.0",
+		"n8n-workflow": "*",
+		"prettier": "^3.5.3",
+		"typescript": "^5.8.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}

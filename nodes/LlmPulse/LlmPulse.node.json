@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-llmpulse.llmPulse",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Analytics", "Marketing & Content"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://llmpulse.ai/api-docs"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://llmpulse.ai/api-docs"
+			}
+		]
+	}
+}
